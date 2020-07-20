@@ -1,0 +1,68 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "funnels" : [ ],
+        "identifier" : "186e4941-5f7c-3de8-aef7-ff5c3d244ec7",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "Process-0",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 291.0,
+          "y" : 95.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-registry",
+            "group" : "org.ai4bd.nifi",
+            "version" : "1.0-SNAPSHOT"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "186e4941-5f7c-3de8-aef7-ff5c3d244ec7",
+          "identifier" : "934ec039-c485-33eb-811a-051fce24404c",
+          "name" : "JsonProcessor",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 272.0,
+            "y" : 48.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : {
+            "Json Path" : {
+              "displayName" : "Json Path",
+              "identifiesControllerService" : false,
+              "name" : "Json Path",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "processors.JsonProcessor",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
