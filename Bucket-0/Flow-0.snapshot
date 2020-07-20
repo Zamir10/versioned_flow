@@ -22,7 +22,7 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "SUCCESS" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-registry",
