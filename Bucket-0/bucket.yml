@@ -1,5 +1,5 @@
 flows:
-  ae484cc6-93ab-4795-bd35-9ae1453b508e: {ver: 3, file: Flow-0.snapshot, comments: Changed
-      coordinates, author: anonymous, created: 1595324341856, flowName: Flow-0, flowDesc: ''}
+  ae484cc6-93ab-4795-bd35-9ae1453b508e: {ver: 4, file: Flow-0.snapshot, comments: Position
+      changed, author: anonymous, created: 1595325061072, flowName: Flow-0, flowDesc: ''}
 layoutVer: 1
 bucketId: 35157c3c-087e-4437-b661-74db20fda160

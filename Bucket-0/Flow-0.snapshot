@@ -17,8 +17,8 @@
         "name" : "Process-0",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 291.0,
-          "y" : 95.0
+          "x" : 328.0,
+          "y" : 160.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -38,8 +38,8 @@
           "name" : "JsonProcessor",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 320.0,
-            "y" : 272.0
+            "x" : 304.0,
+            "y" : 160.0
           },
           "properties" : { },
           "propertyDescriptors" : {
