@@ -38,8 +38,8 @@
           "name" : "JsonProcessor",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 304.0,
-            "y" : 160.0
+            "x" : 384.0,
+            "y" : 8.0
           },
           "properties" : { },
           "propertyDescriptors" : {
