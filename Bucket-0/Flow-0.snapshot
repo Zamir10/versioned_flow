@@ -8,21 +8,62 @@
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
-        "connections" : [ ],
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+            "id" : "f74e7d67-98e4-3b43-88b1-e5688280a685",
+            "name" : "Output-0",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "identifier" : "9021ffca-6c6a-390b-ae83-8f82e37246f7",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "SUCCESS" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+            "id" : "012bd288-d859-3729-83f6-78e39c4f8382",
+            "name" : "JsonProcessor",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
         "controllerServices" : [ ],
         "funnels" : [ ],
         "identifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "PG-0",
-        "outputPorts" : [ ],
+        "outputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "identifier" : "f74e7d67-98e4-3b43-88b1-e5688280a685",
+          "name" : "Output-0",
+          "position" : {
+            "x" : 304.0,
+            "y" : 392.0
+          },
+          "type" : "OUTPUT_PORT"
+        } ],
         "position" : {
-          "x" : 224.0,
-          "y" : 128.0
+          "x" : 272.0,
+          "y" : -16.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "SUCCESS" ],
+          "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-registry",
