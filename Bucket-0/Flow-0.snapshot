@@ -82,7 +82,7 @@
           "identifier" : "f74e7d67-98e4-3b43-88b1-e5688280a685",
           "name" : "Output-0",
           "position" : {
-            "x" : 304.0,
+            "x" : 320.0,
             "y" : 392.0
           },
           "type" : "OUTPUT_PORT"
@@ -109,8 +109,8 @@
           "name" : "JsonProcessor",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 240.0,
-            "y" : 96.0
+            "x" : 264.0,
+            "y" : 88.0
           },
           "properties" : {
             "Json Path" : "$.hello"
@@ -147,7 +147,7 @@
           "name" : "GetFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 232.0,
+            "x" : 264.0,
             "y" : -184.0
           },
           "properties" : {
