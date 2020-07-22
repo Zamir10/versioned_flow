@@ -10,5 +10,7 @@ flows:
       Flow created
   6f728228-f556-4c49-9475-315b24909f68: {ver: 1, file: F-1.snapshot, comments: '',
     author: anonymous, created: 1595344965943, flowName: F-1, flowDesc: ''}
+  0bd3c6c7-b4b0-43b2-b408-11e488625d92: {ver: 1, file: Flow-0.snapshot, comments: '',
+    author: anonymous, created: 1595427444287, flowName: Flow-0, flowDesc: ''}
 layoutVer: 1
 bucketId: 4633fd6d-7910-4d5d-9e76-98ec6e419c85
