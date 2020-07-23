@@ -113,7 +113,7 @@
             "y" : 88.0
           },
           "properties" : {
-            "Json Path" : "$.hello"
+            "Json Path" : "$."
           },
           "propertyDescriptors" : {
             "Json Path" : {
@@ -125,7 +125,7 @@
           },
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
+          "schedulingPeriod" : "1 hour",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "processors.JsonProcessor",
@@ -154,7 +154,7 @@
             "Keep Source File" : "false",
             "Minimum File Age" : "0 sec",
             "Polling Interval" : "0 sec",
-            "Input Directory" : "/home/nifi",
+            "Input Directory" : "/home/nifi/input",
             "Batch Size" : "10",
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
