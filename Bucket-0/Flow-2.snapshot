@@ -11,17 +11,55 @@
         "connections" : [ ],
         "controllerServices" : [ ],
         "funnels" : [ ],
-        "identifier" : "c2901c38-dc84-3a85-adde-26641069fcca",
+        "identifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
         "inputPorts" : [ ],
         "labels" : [ ],
-        "name" : "PG-2",
+        "name" : "PG-0",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 496.0,
-          "y" : 584.0
+          "x" : 224.0,
+          "y" : 128.0
         },
         "processGroups" : [ ],
-        "processors" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ "SUCCESS" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-registry",
+            "group" : "org.ai4bd.nifi",
+            "version" : "1.0-SNAPSHOT"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "identifier" : "012bd288-d859-3729-83f6-78e39c4f8382",
+          "name" : "JsonProcessor",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 240.0,
+            "y" : 96.0
+          },
+          "properties" : {
+            "Json Path" : "/"
+          },
+          "propertyDescriptors" : {
+            "Json Path" : {
+              "displayName" : "Json Path",
+              "identifiesControllerService" : false,
+              "name" : "Json Path",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "processors.JsonProcessor",
+          "yieldDuration" : "1 sec"
+        } ],
         "remoteProcessGroups" : [ ],
         "variables" : { }
       },
