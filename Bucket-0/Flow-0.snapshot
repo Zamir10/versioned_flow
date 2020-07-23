@@ -14,13 +14,13 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+            "groupId" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
             "id" : "f74e7d67-98e4-3b43-88b1-e5688280a685",
             "name" : "Output-0",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "groupIdentifier" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
           "identifier" : "9021ffca-6c6a-390b-ae83-8f82e37246f7",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -31,7 +31,7 @@
           "selectedRelationships" : [ "SUCCESS" ],
           "source" : {
             "comments" : "",
-            "groupId" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+            "groupId" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
             "id" : "012bd288-d859-3729-83f6-78e39c4f8382",
             "name" : "JsonProcessor",
             "type" : "PROCESSOR"
@@ -44,13 +44,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+            "groupId" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
             "id" : "012bd288-d859-3729-83f6-78e39c4f8382",
             "name" : "JsonProcessor",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "groupIdentifier" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
           "identifier" : "4bbbd48e-47bd-32c7-950a-32f04f9f43f8",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -61,7 +61,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+            "groupId" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
             "id" : "4b6d6b09-c166-3826-ab18-a01369ebe780",
             "name" : "GetFile",
             "type" : "PROCESSOR"
@@ -70,7 +70,7 @@
         } ],
         "controllerServices" : [ ],
         "funnels" : [ ],
-        "identifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+        "identifier" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "PG-0",
@@ -78,7 +78,7 @@
           "allowRemoteAccess" : false,
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "groupIdentifier" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
           "identifier" : "f74e7d67-98e4-3b43-88b1-e5688280a685",
           "name" : "Output-0",
           "position" : {
@@ -88,8 +88,8 @@
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 272.0,
-          "y" : -16.0
+          "x" : 496.0,
+          "y" : 64.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -104,7 +104,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "groupIdentifier" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
           "identifier" : "012bd288-d859-3729-83f6-78e39c4f8382",
           "name" : "JsonProcessor",
           "penaltyDuration" : "30 sec",
@@ -142,7 +142,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "groupIdentifier" : "15dedef1-4e38-3441-b7ef-3ece5620c93c",
           "identifier" : "4b6d6b09-c166-3826-ab18-a01369ebe780",
           "name" : "GetFile",
           "penaltyDuration" : "30 sec",
@@ -159,7 +159,7 @@
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
             "Recurse Subdirectories" : "true",
-            "File Filter" : "[^\\.].json"
+            "File Filter" : "[^\\.].*"
           },
           "propertyDescriptors" : {
             "Keep Source File" : {
