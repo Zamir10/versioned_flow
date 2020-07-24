@@ -180,7 +180,7 @@
           "type" : "INPUT_PORT"
         } ],
         "labels" : [ ],
-        "name" : "PG-1",
+        "name" : "PG-1-1",
         "outputPorts" : [ ],
         "position" : {
           "x" : 272.0,
