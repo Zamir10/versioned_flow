@@ -8,257 +8,47 @@
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
-        "connections" : [ {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-            "id" : "3648940c-5c52-3f48-b1fd-35465eeeced1",
-            "name" : "PutFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-          "identifier" : "a73e592c-c73f-34f9-9bc8-2435319a5c47",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
-          "source" : {
-            "groupId" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-            "id" : "70b2b252-fc2f-3831-bcdb-6651935e54b8",
-            "name" : "Input-0",
-            "type" : "INPUT_PORT"
-          },
-          "zIndex" : 0
-        } ],
-        "controllerServices" : [ {
-          "bundle" : {
-            "artifact" : "nifi-dbcp-service-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.11.4"
-          },
-          "comments" : "",
-          "componentType" : "CONTROLLER_SERVICE",
-          "controllerServiceApis" : [ {
-            "bundle" : {
-              "artifact" : "nifi-standard-services-api-nar",
-              "group" : "org.apache.nifi",
-              "version" : "1.11.4"
-            },
-            "type" : "org.apache.nifi.dbcp.DBCPService"
-          } ],
-          "groupIdentifier" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-          "identifier" : "68d6c709-20c5-3a0d-a190-0a723183f8a5",
-          "name" : "DBCPConnectionPool",
-          "properties" : {
-            "dbcp-min-idle-conns" : "0",
-            "Max Wait Time" : "500 millis",
-            "Database Driver Class Name" : "org.postgrsql.Driver",
-            "dbcp-min-evictable-idle-time" : "30 mins",
-            "Max Total Connections" : "8",
-            "dbcp-max-conn-lifetime" : "-1",
-            "Database Connection URL" : "jdbc:postgresql:// postgresdb4trees.ai4bd.org:5432/4trees",
-            "dbcp-time-between-eviction-runs" : "-1",
-            "Database User" : "postgres_user_4trees",
-            "dbcp-soft-min-evictable-idle-time" : "-1",
-            "dbcp-max-idle-conns" : "8"
-          },
-          "propertyDescriptors" : {
-            "dbcp-min-idle-conns" : {
-              "displayName" : "Minimum Idle Connections",
-              "identifiesControllerService" : false,
-              "name" : "dbcp-min-idle-conns",
-              "sensitive" : false
-            },
-            "Max Wait Time" : {
-              "displayName" : "Max Wait Time",
-              "identifiesControllerService" : false,
-              "name" : "Max Wait Time",
-              "sensitive" : false
-            },
-            "Database Driver Class Name" : {
-              "displayName" : "Database Driver Class Name",
-              "identifiesControllerService" : false,
-              "name" : "Database Driver Class Name",
-              "sensitive" : false
-            },
-            "dbcp-min-evictable-idle-time" : {
-              "displayName" : "Minimum Evictable Idle Time",
-              "identifiesControllerService" : false,
-              "name" : "dbcp-min-evictable-idle-time",
-              "sensitive" : false
-            },
-            "Max Total Connections" : {
-              "displayName" : "Max Total Connections",
-              "identifiesControllerService" : false,
-              "name" : "Max Total Connections",
-              "sensitive" : false
-            },
-            "kerberos-credentials-service" : {
-              "displayName" : "Kerberos Credentials Service",
-              "identifiesControllerService" : true,
-              "name" : "kerberos-credentials-service",
-              "sensitive" : false
-            },
-            "dbcp-max-conn-lifetime" : {
-              "displayName" : "Max Connection Lifetime",
-              "identifiesControllerService" : false,
-              "name" : "dbcp-max-conn-lifetime",
-              "sensitive" : false
-            },
-            "Validation-query" : {
-              "displayName" : "Validation query",
-              "identifiesControllerService" : false,
-              "name" : "Validation-query",
-              "sensitive" : false
-            },
-            "Database Connection URL" : {
-              "displayName" : "Database Connection URL",
-              "identifiesControllerService" : false,
-              "name" : "Database Connection URL",
-              "sensitive" : false
-            },
-            "dbcp-time-between-eviction-runs" : {
-              "displayName" : "Time Between Eviction Runs",
-              "identifiesControllerService" : false,
-              "name" : "dbcp-time-between-eviction-runs",
-              "sensitive" : false
-            },
-            "Database User" : {
-              "displayName" : "Database User",
-              "identifiesControllerService" : false,
-              "name" : "Database User",
-              "sensitive" : false
-            },
-            "dbcp-soft-min-evictable-idle-time" : {
-              "displayName" : "Soft Minimum Evictable Idle Time",
-              "identifiesControllerService" : false,
-              "name" : "dbcp-soft-min-evictable-idle-time",
-              "sensitive" : false
-            },
-            "database-driver-locations" : {
-              "displayName" : "Database Driver Location(s)",
-              "identifiesControllerService" : false,
-              "name" : "database-driver-locations",
-              "sensitive" : false
-            },
-            "dbcp-max-idle-conns" : {
-              "displayName" : "Max Idle Connections",
-              "identifiesControllerService" : false,
-              "name" : "dbcp-max-idle-conns",
-              "sensitive" : false
-            },
-            "Password" : {
-              "displayName" : "Password",
-              "identifiesControllerService" : false,
-              "name" : "Password",
-              "sensitive" : true
-            }
-          },
-          "type" : "org.apache.nifi.dbcp.DBCPConnectionPool"
-        } ],
+        "connections" : [ ],
+        "controllerServices" : [ ],
         "funnels" : [ ],
-        "identifier" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-        "inputPorts" : [ {
-          "allowRemoteAccess" : false,
-          "componentType" : "INPUT_PORT",
-          "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-          "identifier" : "70b2b252-fc2f-3831-bcdb-6651935e54b8",
-          "name" : "Input-0",
-          "position" : {
-            "x" : 480.0,
-            "y" : -104.0
-          },
-          "type" : "INPUT_PORT"
-        } ],
+        "identifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+        "inputPorts" : [ ],
         "labels" : [ ],
-        "name" : "PG-1-1",
+        "name" : "PG-0",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 272.0,
-          "y" : 376.0
+          "x" : 224.0,
+          "y" : 128.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "autoTerminatedRelationships" : [ "SUCCESS" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.11.4"
+            "artifact" : "nifi-registry",
+            "group" : "org.ai4bd.nifi",
+            "version" : "1.0-SNAPSHOT"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "98207d46-d586-3ce9-a5cd-9acbc69321c1",
-          "identifier" : "3648940c-5c52-3f48-b1fd-35465eeeced1",
-          "name" : "PutFile",
+          "groupIdentifier" : "c5973c0e-0689-3a16-8de7-b55f9338d88b",
+          "identifier" : "012bd288-d859-3729-83f6-78e39c4f8382",
+          "name" : "JsonProcessor",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 440.0,
-            "y" : 80.0
+            "x" : 240.0,
+            "y" : 96.0
           },
           "properties" : {
-            "Create Missing Directories" : "true",
-            "Directory" : "/",
-            "Conflict Resolution Strategy" : "fail"
+            "Json Path" : "/"
           },
           "propertyDescriptors" : {
-            "Group" : {
-              "displayName" : "Group",
+            "Json Path" : {
+              "displayName" : "Json Path",
               "identifiesControllerService" : false,
-              "name" : "Group",
-              "sensitive" : false
-            },
-            "Owner" : {
-              "displayName" : "Owner",
-              "identifiesControllerService" : false,
-              "name" : "Owner",
-              "sensitive" : false
-            },
-            "Create Missing Directories" : {
-              "displayName" : "Create Missing Directories",
-              "identifiesControllerService" : false,
-              "name" : "Create Missing Directories",
-              "sensitive" : false
-            },
-            "Permissions" : {
-              "displayName" : "Permissions",
-              "identifiesControllerService" : false,
-              "name" : "Permissions",
-              "sensitive" : false
-            },
-            "Maximum File Count" : {
-              "displayName" : "Maximum File Count",
-              "identifiesControllerService" : false,
-              "name" : "Maximum File Count",
-              "sensitive" : false
-            },
-            "Last Modified Time" : {
-              "displayName" : "Last Modified Time",
-              "identifiesControllerService" : false,
-              "name" : "Last Modified Time",
-              "sensitive" : false
-            },
-            "Directory" : {
-              "displayName" : "Directory",
-              "identifiesControllerService" : false,
-              "name" : "Directory",
-              "sensitive" : false
-            },
-            "Conflict Resolution Strategy" : {
-              "displayName" : "Conflict Resolution Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Conflict Resolution Strategy",
+              "name" : "Json Path",
               "sensitive" : false
             }
           },
@@ -267,7 +57,7 @@
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
-          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "type" : "processors.JsonProcessor",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
